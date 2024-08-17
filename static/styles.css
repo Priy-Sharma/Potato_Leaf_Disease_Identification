@@ -1,0 +1,138 @@
+.headline {
+  padding-top: 50px;
+  font-size: 60px;
+
+}
+
+.d-grid.gap-2.d-sm-flex.justify-content-sm-center {
+    padding-top: 50px; /* This will apply padding to the button section */
+    margin-top: 20px;  /* Optional: Add margin-top to create more space above the buttons */
+}
+
+.head{
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+
+.box {
+  height: 150px;
+  width: 100px;
+  padding-top: 100px;
+  border: 2px solid red;
+}
+/* For result.html */
+.result-headline{
+font-size: 40px;
+}
+
+.result1 {
+  align-items: center;
+}
+
+#box1 {
+  height: 5in; /* 8 inches height */
+  width: 5in; /* 6 inches width */
+  border: 2px solid green;
+
+  /* Center the box on the screen */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+#resultText {
+  height: 1in; /* 1 inch space for the result */
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+.image{
+width:5in;
+height:3.5in
+
+}
+
+/* Information.html*/
+/* Ensure that the container uses Flexbox for layout */
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between items */
+  padding-top: 10px; /* Padding around the container */
+}
+
+
+/* Style for the image */
+.early_image {
+  /* Adjust size and position as needed */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the cause and prevention boxes */
+.early_cause, .early_prevention {
+  padding: 10px;
+  width: 400px;
+  height:200px;
+  background-color: #f5f5f5; /* Optional: background color for visibility */
+  border: 1px solid #ddd; /* Optional: border for visibility */
+  text-align:left;
+}
+
+/* Optional: Center text inside the cause and prevention boxes */
+.early_cause h4, .early_prevention h4 {
+  text-align: center;
+}
+
+#info {
+  text-align: center; /* Center the heading horizontally */
+  padding-top: 10px; /* Adds space at the top */
+  margin-bottom: 20px; /* Adds space between heading and flex container */
+  color:white;
+  font-size:40px
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between items */
+  padding-top: 30px; /* Padding around the container */
+}
+
+.late_image {
+  /* Adjust size and position as needed */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the cause and prevention boxes */
+.late_cause, .late_prevention {
+  padding: 10px;
+  width: 400px;
+  height:200px;
+  background-color: #f5f5f5; /* Optional: background color for visibility */
+  border: 1px solid #ddd; /* Optional: border for visibility */
+  text-align:left;
+}
+
+/* Optional: Center text inside the cause and prevention boxes */
+.late_cause h4, .late_prevention h4 {
+  text-align: center;
+}
+
