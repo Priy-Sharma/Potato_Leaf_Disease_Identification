@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FARM WEBSITE</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <style>
+    body {
+      background-image: url('./static/FarmImage.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h2 class="headline">Welcome To Farm Website</h2>
+<p style="color:#FFFDD0; font-size: 30px; font-family: Dosis, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;">The ultimate solution to all your farm-related problems</p>
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+        <a href="{{ url_for('upload_page') }}"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Upload & Identify</button></a>
+        <a href="/info_page"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Explore About Diseases</button></a>
+</div>
+</body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+</html>

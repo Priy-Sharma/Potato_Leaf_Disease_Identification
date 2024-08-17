@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FARM WEBSITE</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    body {
+      background-image: url('./static/Blurred_FarmImage.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <h2 class="result-headline">Result</h2>
+<div class="result1">
+  <div id="box1">
+    <div id="UploadedImage">
+      <img class="image" src="{{ url_for('static', filename='1.jpg') }}" alt="Uploaded image">
+      <p style="color: white; font-size: 24px; text-align: center;">Predicted class: {{ result_dict['class'] }}</p>
+      <p style="color: white; font-size: 24px; text-align: center;">Confidence Level: {{ result_dict['confidence'] }} %</p>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+<!--<p>The confidence is {{ result_dict['confidence'] }}</p>-->
+<!--<p>Predicted class: {{ result_dict['class'] }}</p>-->
+<!--<div>-->
+<!--  <img src="{{ url_for('static', filename='1.jpg') }}" alt="Uploaded image">-->

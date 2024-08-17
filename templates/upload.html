@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Potato Leaf Image</title>
+  <link rel="stylesheet" href="static/styles.css">
+   <style>
+    body {
+      background-image: url('./static/FarmImage.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="head">Upload Image of Potato Leaf</h2>
+  <form action="{{ url_for('upload_image') }}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
